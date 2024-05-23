@@ -1,9 +1,27 @@
 # AI4_C_datasets
-The sets contain labelled images and can be used to support training or testing of tools and models that support tasks such as colour detection and pattern detection. These datasets were created as part of the [AI4Culture project.](https://pro.europeana.eu/project/ai4culture-an-ai-platform-for-the-cultural-heritage-data-space)
+The sets contain labelled images and can be used to support training or testing of tools and models that support tasks such as colour detection and pattern detection. These datasets were created as part of the [AI4Culture project.](https://pro.europeana.eu/project/ai4culture-an-ai-platform-for-the-cultural-heritage-data-space).
+
+All images were normalised to the .jpg file format and reduced to a maximum dimension of 400 pixels. 
+The annotation format is based on the COCO format, used by the COCO (Common Objects in Context) dataset and annotations. It contains the following sections:
+* Info: general info concerning the dataset
+* Images
+  * unique identifier
+  * filename
+  * license given by the content provider
+  * source: image provenance
+* Annotations
+  * unique identifier
+  * image identifier
+  * category identifier
+* Categories
+  * unique identifier
+  * name a unique identifier referring to a linke data resource (e.g. Wikidata, European Fashion Thesaurus or the Art & Architecture Thesaurus)
+  * label (not part of the COCO format),  
+
 
 ## Pattern dataset
 ### Description
-The textile pattern dataset is a set of images that is labeled with the pattern that is printed on or woven into the textile of the object. The represented object can be a piece of textile (e.g. a sample or a piece of tissue), or a fashion object such as a dress. The fashion object can be photographed individually or in a context, e.g. as worn by a model in a fashion show. The dataset can be used to train image classification models that classify images of textiles or fashion objects by their pattern, but may also be applied to other subject areas (e.g. design).
+The [textile pattern dataset](https://github.com/datable-be/AI4_C_datasets/tree/main/textile_pattern_dataset) is a set of images that is labeled with the pattern that is printed on or woven into the textile of the object. The represented object can be a piece of textile (e.g. a sample or a piece of tissue), or a fashion object such as a dress. The fashion object can be photographed individually or in a context, e.g. as worn by a model in a fashion show. The dataset can be used to train image classification models that classify images of textiles or fashion objects by their pattern, but may also be applied to other subject areas (e.g. design).
 Sources and creation
 The images were retrieved from the following sources:
 * Fashion Museum Antwerp
