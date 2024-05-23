@@ -1,7 +1,7 @@
 # AI4_C_datasets
 The sets contain labelled images and can be used to support training or testing of tools and models that support tasks such as colour detection and pattern detection. These datasets were created as part of the [AI4Culture project.](https://pro.europeana.eu/project/ai4culture-an-ai-platform-for-the-cultural-heritage-data-space).
 
-All images were normalised to the .jpg file format and reduced to a maximum dimension of 400 pixels. 
+All images were normalised to the .jpg file format and reduced to a maximum dimension of 500 pixels. 
 The annotation format is based on the COCO format, used by the COCO (Common Objects in Context) dataset and annotations. It contains the following sections:
 * Info: general info concerning the dataset
 * Images
