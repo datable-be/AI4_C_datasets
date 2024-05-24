@@ -1,0 +1,1 @@
+The color detection dataset is a set of images that is labeled with the color(s) of the predominant object that is depicted in it. The dataset can be used to train color detection of classification models Although the set contains images of fashion and costume objects, models trained with this dataset could also be applied to other subject areas (e.g. furniture, cars).
