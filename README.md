@@ -1,6 +1,11 @@
 # AI4_C_datasets
 The sets contain labelled images and can be used to support training or testing of tools and models that support tasks such as colour detection and pattern detection. These datasets were created as part of the [AI4Culture project.](https://pro.europeana.eu/project/ai4culture-an-ai-platform-for-the-cultural-heritage-data-space).
 
+## License
+**Warning**
+The dataset is published with a permissive license, but images may be licensed as well. The license of each image is included in the metadata
+
+## Metadata
 All images were normalised to the .jpg file format and reduced to a maximum dimension of 500 pixels. 
 The annotation format is based on the COCO format, used by the COCO (Common Objects in Context) dataset and annotations. It contains the following sections:
 * Info: general info concerning the dataset
@@ -8,6 +13,8 @@ The annotation format is based on the COCO format, used by the COCO (Common Obje
   * unique identifier
   * filename
   * license given by the content provider
+  * landing page: a url to the object in the original context on Europeana
+  * url: a url to the machine-readable metadata on Europeana (requires an [Europeana API key](https://pro.europeana.eu/page/apis))
   * source: image provenance
 * Annotations
   * unique identifier
@@ -29,10 +36,6 @@ The images were retrieved from the following sources:
 * National Museum of World Cultures Foundation
 
 The dataset was created using a human in the loop methodology, in which a larger set of images was classified with a zero shot classifier. The zero shot classifier was instructed to predict a class for each of the images in the corpus. Next, the predictions were reviewed by a human validator. The validation involved each predicted class being either approved, corrected, or rejected.
-
-### License
-**Warning**
-The dataset is published with a permissive license, but images may be licensed as well. The license of each image is included in the metadata
 
 ### Classes
 The images are labelled with one of each of the 6 classes, with reference to the AAT linked data authority. 
@@ -56,4 +59,41 @@ The dataset contains 1245 labelled images, with the following labels:
 |geometric pattern|176|
 |plaid pattern|167|
 |striped pattern|247|
+
+## Pattern dataset
+### Description
+The colour detection dataset is a set of images that is annotated with the colour(s) of the predominant object that is depicted in it. The dataset can be used to train colour detection of classification models. Although the set contains images of fashion and costume objects, models trained with this dataset could also be applied to other subject areas (e.g. furniture, cars).
+
+Sources and creation
+The images were retrieved from the following sources:
+* Fashion Museum Antwerp
+* Fashionpedia
+* National Museum of World Cultures Foundation
+
+The dataset was created using a human in the loop methodology, in which a larger set of images was classified with a colour detection algorithm, part of the Content Analysis tool which was developed for the AI4Culture project. Next, the predicted colours were reviewed by a human validator. The validation involved each prediction being either approved, corrected, or rejected.
+
+### Classes
+Classes correspond to the colour concepts in the [European Fashion Thesaurus](http://thesaurus.europeanafashion.eu/)
+
+### Statistics
+The dataset contains 2405 annotated images, with 3295 colour annotations:
+
+|Colour|number of labels|
+|-----|----------------|
+|white|964|
+|black|844|
+|brown|336|
+|red|237|
+|blue|202|
+|yellow|155|
+|grey|133|
+|pink|116|
+|green|97|
+|purple|70|
+|gold|58|
+|orange|49|
+|silver|26|
+|multicoloured|4|
+|beige|4|
+
 
