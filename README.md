@@ -60,7 +60,7 @@ The dataset contains 1245 labelled images, with the following labels:
 |plaid pattern|167|
 |striped pattern|247|
 
-## Pattern dataset
+## Color detection dataset
 ### Description
 The colour detection dataset is a set of images that is annotated with the colour(s) of the predominant object that is depicted in it. The dataset can be used to train colour detection of classification models. Although the set contains images of fashion and costume objects, models trained with this dataset could also be applied to other subject areas (e.g. furniture, cars).
 
